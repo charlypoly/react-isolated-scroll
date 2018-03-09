@@ -2,10 +2,13 @@ import * as React from 'react';
 import { isTruthyWithDefault } from './utils';
 
 interface Props {
+    // callbacks
     atTop?: (delta: number) => void;
     atBottom?: (delta: number) => void;
+    // configuration
     atTopMargin?: number;
     atBottomMargin?: number;
+    // controls
     enabled?: boolean;
     preventScroll?: boolean;
     topScroll?: number;
